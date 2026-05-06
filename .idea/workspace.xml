@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cc0d0c2-380a-4ce3-a29e-0a3d7d05c13b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gallery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/VBGlogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/gallery1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/gallery2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/gallery3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/gallery4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/gallery5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/homeBG.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/new-relaxation-protocol-day-1.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/new-relaxation-protocol-day-2.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
+    <list default="true" id="3cc0d0c2-380a-4ce3-a29e-0a3d7d05c13b" name="Changes" comment="Week 2: Math function added in the form of a tip calculator.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +17,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "codeteam13"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/codeteam13/VanBGroomingRemastered.git",
+    "accountId": "2fcef533-3bf5-45a0-841e-dd811e08454d"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
@@ -73,11 +72,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1778081309671</updated>
-      <workItem from="1778081310702" duration="632000" />
+      <workItem from="1778081310702" duration="2412000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Week 2: Math function added in the form of a tip calculator." />
+    <option name="LAST_COMMIT_MESSAGE" value="Week 2: Math function added in the form of a tip calculator." />
   </component>
 </project>

@@ -58,6 +58,19 @@
         </section>
     </div>
 
+    <div class="service-card" style="max-width: 400px; margin: 20px auto; display: block;">
+        <h3>Tip Calculator</h3>
+        <label for="service-cost">Service Cost ($):</label>
+        <input type="number" id="service-cost" placeholder="e.g. 60">
+
+        <label for="tip-percent">Tip Percentage (%):</label>
+        <input type="number" id="tip-percent" placeholder="e.g. 15">
+
+        <button type="button" onclick="calculateTip()">Calculate</button>
+
+        <p id="total-cost" style="margin-top: 15px; font-weight: bold;"></p>
+    </div>
+
     <br><hr><br>
 
     <div class="desktop-only">
