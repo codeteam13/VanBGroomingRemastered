@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cc0d0c2-380a-4ce3-a29e-0a3d7d05c13b" name="Changes" comment="Week 2: Math function added in the form of a tip calculator.">
-      <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
+    <list default="true" id="3cc0d0c2-380a-4ce3-a29e-0a3d7d05c13b" name="Changes" comment="Week 3: Added function using if-else statement to check pet size category.">
+      <change afterPath="$PROJECT_DIR$/scripts/validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1778081309671</updated>
-      <workItem from="1778081310702" duration="2643000" />
+      <workItem from="1778081310702" duration="3460000" />
     </task>
     <task id="LOCAL-00001" summary="Week 2: Math function added in the form of a tip calculator.">
       <option name="closed" value="true" />
@@ -81,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778086247092</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Week 3: Added function using if-else statement to check pet size category.">
+      <option name="closed" value="true" />
+      <created>1778086782821</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1778086782821</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Week 2: Math function added in the form of a tip calculator." />
-    <option name="LAST_COMMIT_MESSAGE" value="Week 2: Math function added in the form of a tip calculator." />
+    <MESSAGE value="Week 3: Added function using if-else statement to check pet size category." />
+    <option name="LAST_COMMIT_MESSAGE" value="Week 3: Added function using if-else statement to check pet size category." />
   </component>
 </project>
