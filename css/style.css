@@ -1,0 +1,337 @@
+/*
+  Name: VanBrocklin, Hunter J.
+  File name: style.css
+  Date: 11/28/2025
+*/
+
+/* CSS Reset Rule */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+article, section, aside, figure, figcaption, audio {
+    display: block;
+}
+
+/* General Body */
+body {
+    font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+}
+/* remove audio and seperate in to fix the broken audio player.....Oops */
+img, iframe {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+audio {
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
+}
+/* Removed height: auto so the player retains its default size */
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    background-color: #f8f8f8;
+    padding: 20px 15px;
+    text-align: center;
+    border-bottom: 2px solid #eeeeee;
+}
+
+header figure {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 5px;
+}
+
+header figcaption {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: none;
+    width: 100%;
+}
+
+nav li {
+    display: block;
+    border-bottom: 1px solid #444;
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+nav a {
+    color: #FFFFFF;
+    font-weight: bold;
+    display: block;
+    padding: 14px 20px;
+}
+
+.mobile-only {
+    cursor: pointer;
+    display: block;
+}
+
+/* Main Content */
+.container {
+    width: 100%;
+    padding: 20px 15px;
+}
+
+section#contact, section.service-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+section.service-card:hover, section#contact:hover {
+    transform: scale(1.02);
+}
+
+.responsive-map-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Limits the width so it's not huge anymore and has a border */
+    aspect-ratio: 16 / 9; /* Keeps the rectangular shape */
+    margin: 20px auto; /* hopefully centers the map... It did for me... */
+}
+
+.responsive-map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background-image: url('../images/homeBG.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5);
+}
+
+.hero-banner h3 {
+    color: #FFFFFF;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-banner p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.gallery-grid figure {
+    margin: 0;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid figure:hover {
+    transform: scale(1.03);
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px 5px 0 0;
+}
+
+.gallery-grid figcaption {
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+    font-weight: bold;
+}
+
+/* Form Styling */
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #004494;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* --- Social Media Footer Styles --- */
+footer {
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: 20px;
+    border-top: 2px solid #eeeeee;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 1.5em; /* Makes icons bigger */
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #0056b3; /* Blue on hover */
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet View */
+@media screen and (min-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav li {
+        display: inline-block;
+        border-bottom: none;
+        border-right: 1px solid #444;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Desktop View */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    .desktop-only {
+        display: block;
+    }
+
+    nav a:hover {
+        color: #0056b3;
+        background-color: #ffffff;
+        text-decoration: underline;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
