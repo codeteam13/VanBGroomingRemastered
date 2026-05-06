@@ -71,6 +71,29 @@
         <p id="total-cost" style="margin-top: 15px; font-weight: bold;"></p>
     </div>
 
+    <div class="service-card" style="max-width: 400px; margin: 20px auto; display: block;">
+        <h3>Pet Size Category Checker</h3>
+        <p style="margin-bottom: 10px;">Find out your pet's size category for accurate pricing!</p>
+
+        <label for="pet-weight">Pet Weight (lbs):</label>
+        <input type="number" id="pet-weight" placeholder="e.g. 45">
+
+        <button type="button" onclick="checkSize()">Check Category</button>
+
+        <p id="size-result" style="margin-top: 15px; font-weight: bold;"></p>
+    </div>
+    <div class="service-card" style="max-width: 400px; margin: 20px auto; display: block;">
+        <h3>Size-Based Pricing Guide</h3>
+        <p style="margin-bottom: 10px;">Grooming costs vary depending on the size of your pet, as larger pets require more time and product.</p>
+        <ul style="text-align: left; margin-left: 40px; margin-bottom: 15px;">
+            <li><strong>Small (0 - 20 lbs):</strong> Base Price</li>
+            <li><strong>Medium (21 - 50 lbs):</strong> Base Price + $10</li>
+            <li><strong>Large (51 - 90 lbs):</strong> Base Price + $20</li>
+            <li><strong>Extra Large (91+ lbs):</strong> Base Price + $35</li>
+        </ul>
+        <p style="font-size: 0.9em; color: #555;"><em>*Note: Exact prices are finalized after evaluating coat condition.</em></p>
+    </div>
+
     <br><hr><br>
 
     <div class="desktop-only">

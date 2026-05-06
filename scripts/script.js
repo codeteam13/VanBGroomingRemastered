@@ -30,3 +30,21 @@ function calculateTip() {
 
     document.getElementById("total-cost").innerHTML = "Tip: $" + tipAmount.toFixed(2) + " | Total: $" + total.toFixed(2);
 }
+
+// Function to determine pet size category using if/else if statements
+function checkSize() {
+    const weight = parseFloat(document.getElementById("pet-weight").value);
+    const resultElement = document.getElementById("size-result");
+
+    if (isNaN(weight) || weight <= 0) {
+        resultElement.innerHTML = "Please enter a valid weight.";
+    } else if (weight <= 20) {
+        resultElement.innerHTML = "Category: Small (0 - 20 lbs)";
+    } else if (weight <= 50) {
+        resultElement.innerHTML = "Category: Medium (21 - 50 lbs)";
+    } else if (weight <= 90) {
+        resultElement.innerHTML = "Category: Large (51 - 90 lbs)";
+    } else {
+        resultElement.innerHTML = "Category: Extra Large (91+ lbs)";
+    }
+}
