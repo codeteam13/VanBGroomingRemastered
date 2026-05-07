@@ -6,16 +6,47 @@
 
 // File created to seperate validation funcs for cleanliness
 
+// Array to hold the selected add-on options
+let selectedAddons = [];
+
+// Wait for the HTML to load before attaching event listeners
+document.addEventListener("DOMContentLoaded", function() {
+    const addonCheckboxes = document.querySelectorAll(".addon-checkbox");
+
+    // Add a change listener to each of the 5 checkboxes
+    addonCheckboxes.forEach(function(checkbox) {
+        checkbox.addEventListener("change", function(event) {
+            const value = event.target.value;
+
+            if (event.target.checked) {
+                // Add to array if checked
+                selectedAddons.push(value);
+            } else {
+                // Remove from array if unchecked
+                const index = selectedAddons.indexOf(value);
+                if (index > -1) {
+                    selectedAddons.splice(index, 1);
+                }
+            }
+
+            // Convert the array to a string separated by commas
+            const addonsString = selectedAddons.join(", ");
+
+            // Display the string on the webpage
+            const outputElement = document.getElementById("addon-output");
+            if (selectedAddons.length > 0) {
+                outputElement.innerHTML = "Add-ons selected: " + addonsString;
+            } else {
+                outputElement.innerHTML = "";
+            }
+        });
+    });
+});
 
 // Function to validate the appointment form using exception handling (try/catch)
-/*
-  File name: validation.js
-  Purpose: Form validation and exception handling
-*/
-
 function validateForm(event) {
     const errorElement = document.getElementById("form-error");
-    errorElement.innerHTML = ""; // Clear previous errors
+    errorElement.innerHTML = "";
     let errorMessages = [];
 
     try {
@@ -25,7 +56,6 @@ function validateForm(event) {
         const serviceType = document.getElementById("service-type").value;
         const petTypeRadios = document.getElementsByName("pet-type");
 
-        // Check if at least one radio button is selected
         let petSelected = false;
         for (let i = 0; i < petTypeRadios.length; i++) {
             if (petTypeRadios[i].checked) {
@@ -34,7 +64,6 @@ function validateForm(event) {
             }
         }
 
-        // Validation Rules
         if (nameInput === "") {
             errorMessages.push("- Name is required.");
         }
@@ -54,7 +83,6 @@ function validateForm(event) {
             errorMessages.push("- Please select an Interested Service.");
         }
 
-        // If any errors exist, throw them all at once
         if (errorMessages.length > 0) {
             throw errorMessages.join("<br>");
         }
