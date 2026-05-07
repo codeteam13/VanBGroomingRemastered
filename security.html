@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="scripts/script.js"></script>
+    <script src="scripts/security.js" defer></script>
+    <title>VanB Grooming - Web Security</title>
+</head>
+<body>
+
+<header>
+    <figure>
+        <img src="images/VBGlogo.png" alt="VanB Grooming Logo" style="margin: 0 auto; max-width: 150px;">
+        <h1>VanB Grooming</h1>
+        <figcaption>Premium Grooming, Exceptional Care.</figcaption>
+    </figure>
+</header>
+
+<nav>
+    <div id="mobile-menu-btn" class="mobile-only" onclick="toggleMenu()" style="color: white; padding: 10px; font-weight: bold;">Menu ▼</div>
+    <ul id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="security.html">Security</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <h2>Web Security & Privacy</h2>
+    <p>Web applications can access a surprising amount of information about your device. Here is what your browser is currently sharing with this page:</p>
+
+    <div class="service-card" style="margin: 20px 0; text-align: left;">
+        <h3>Your Device Information</h3>
+        <p id="sec-error" style="color: red; font-weight: bold;"></p>
+        <ul style="margin-left: 20px; line-height: 1.8;">
+            <li><strong>Browser User Agent:</strong> <span id="prop-ua">Loading...</span></li>
+            <li><strong>Operating System/Platform:</strong> <span id="prop-plat">Loading...</span></li>
+            <li><strong>Browser Language:</strong> <span id="prop-lang">Loading...</span></li>
+            <li><strong>Cookies Enabled:</strong> <span id="prop-cookies">Loading...</span></li>
+            <li><strong>Screen Width:</strong> <span id="prop-width">Loading...</span> px</li>
+            <li><strong>Screen Height:</strong> <span id="prop-height">Loading...</span> px</li>
+        </ul>
+    </div>
+
+    <br><hr><br>
+
+    <h3>Safe Web Practices</h3>
+    <p>Protecting your personal information online is crucial. Check out these resources to learn more about web safety:</p>
+    <ul style="margin-top: 15px; margin-left: 20px; line-height: 1.8;">
+        <li><a href="https://www.cisa.gov/secure-our-world" target="_blank">CISA: Secure Our World</a> - CISA provides actionable steps like using strong passwords and enabling MFA to protect your online identity.</li>
+        <li><a href="https://consumer.ftc.gov/identity-theft-and-online-security" target="_blank">FTC: Online Security</a> - The FTC offers consumer advice on how to secure your devices and protect personal information online.</li>
+        <li><a href="https://staysafeonline.org/" target="_blank">National Cybersecurity Alliance</a> - This organization educates users on identifying phishing attempts and maintaining basic digital hygiene.</li>
+    </ul>
+</main>
+
+<footer>
+    <div class="social-media">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>© 2026 Hunter VanBrocklin | <a href="mailto:hunter.vanbrockli@mainecc.edu">hunter.vanbrockli@mainecc.edu</a></p>
+</footer>
+
+</body>
+</html>

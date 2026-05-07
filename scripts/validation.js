@@ -1,16 +1,11 @@
 /*
   Name: VanBrocklin, Hunter J.
-  File name: script.js
+  File name: validation.js
   Date: 5/1/2026
 */
 
 // File created to seperate validation funcs for cleanliness
 
-
-/*
-  File name: validation.js
-  Purpose: Form validation and exception handling
-*/
 
 // Function to validate the appointment form using exception handling (try/catch)
 function validateForm(event) {
