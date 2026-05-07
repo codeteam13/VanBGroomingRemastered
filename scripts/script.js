@@ -32,19 +32,37 @@ function calculateTip() {
 }
 
 // Function to determine pet size category using if/else if statements
+// function checkSize() {
+//     const weight = parseFloat(document.getElementById("pet-weight").value);
+//     const resultElement = document.getElementById("size-result");
+//
+//     if (isNaN(weight) || weight <= 0) {
+//         resultElement.innerHTML = "Please enter a valid weight.";
+//     } else if (weight <= 20) {
+//         resultElement.innerHTML = "Category: Small (0 - 20 lbs)";
+//     } else if (weight <= 50) {
+//         resultElement.innerHTML = "Category: Medium (21 - 50 lbs)";
+//     } else if (weight <= 90) {
+//         resultElement.innerHTML = "Category: Large (51 - 90 lbs)";
+//     } else {
+//         resultElement.innerHTML = "Category: Extra Large (91+ lbs)";
+//     }
+//}
+
+// Function to determine pet size category using the new PetClient object
 function checkSize() {
-    const weight = parseFloat(document.getElementById("pet-weight").value);
+    const weightInput = parseFloat(document.getElementById("pet-weight").value);
     const resultElement = document.getElementById("size-result");
 
-    if (isNaN(weight) || weight <= 0) {
+    if (isNaN(weightInput) || weightInput <= 0) {
         resultElement.innerHTML = "Please enter a valid weight.";
-    } else if (weight <= 20) {
-        resultElement.innerHTML = "Category: Small (0 - 20 lbs)";
-    } else if (weight <= 50) {
-        resultElement.innerHTML = "Category: Medium (21 - 50 lbs)";
-    } else if (weight <= 90) {
-        resultElement.innerHTML = "Category: Large (51 - 90 lbs)";
-    } else {
-        resultElement.innerHTML = "Category: Extra Large (91+ lbs)";
+        return;
     }
+
+    // Create a new instance of the PetClient object using the input weight
+    // (Using placeholder strings for name and type since the form only asks for weight)
+    const currentPet = new PetClient("Guest Pet", "Unknown", weightInput);
+
+    // Call the prototype method to get the category and display it
+    resultElement.innerHTML = "Category: " + currentPet.getSizeCategory();
 }
