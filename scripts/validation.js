@@ -9,30 +9,21 @@
 // Array to hold the selected add-on options
 let selectedAddons = [];
 
-// Wait for the HTML to load before attaching event listeners
 document.addEventListener("DOMContentLoaded", function() {
     const addonCheckboxes = document.querySelectorAll(".addon-checkbox");
 
-    // Add a change listener to each of the 5 checkboxes
     addonCheckboxes.forEach(function(checkbox) {
         checkbox.addEventListener("change", function(event) {
             const value = event.target.value;
-
             if (event.target.checked) {
-                // Add to array if checked
                 selectedAddons.push(value);
             } else {
-                // Remove from array if unchecked
                 const index = selectedAddons.indexOf(value);
                 if (index > -1) {
                     selectedAddons.splice(index, 1);
                 }
             }
-
-            // Convert the array to a string separated by commas
             const addonsString = selectedAddons.join(", ");
-
-            // Display the string on the webpage
             const outputElement = document.getElementById("addon-output");
             if (selectedAddons.length > 0) {
                 outputElement.innerHTML = "Add-ons selected: " + addonsString;
@@ -43,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Function to validate the appointment form using exception handling (try/catch)
 function validateForm(event) {
     const errorElement = document.getElementById("form-error");
     errorElement.innerHTML = "";
@@ -85,6 +75,11 @@ function validateForm(event) {
 
         if (errorMessages.length > 0) {
             throw errorMessages.join("<br>");
+        }
+
+        // Call the function from storage.js to save the data
+        if (typeof saveFormData === "function") {
+            saveFormData(nameInput, emailInput);
         }
 
         alert("Thank you! Your appointment request has been submitted.");
