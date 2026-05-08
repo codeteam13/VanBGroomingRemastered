@@ -48,6 +48,20 @@
         </ul>
     </div>
 
+    <div class="service-card" style="margin: 20px 0; text-align: left;">
+        <h3>Your Location Data</h3>
+        <p id="geo-error" style="color: red; font-weight: bold;"></p>
+        <ul style="margin-left: 20px; line-height: 1.8;">
+            <li><strong>Latitude:</strong> <span id="loc-lat">Calculating...</span></li>
+            <li><strong>Longitude:</strong> <span id="loc-lon">Calculating...</span></li>
+            <li><strong>Altitude:</strong> <span id="loc-alt">Calculating...</span></li>
+        </ul>
+
+        <div id="map-container">
+            <iframe id="map-frame" src=""></iframe>
+        </div>
+    </div>
+
     <br><hr><br>
 
     <h3>Safe Web Practices</h3>
