@@ -16,19 +16,42 @@ function toggleMenu() {
 }
 
 // Function to calculate tip and total cost for the tip
+// function calculateTip() {
+//     let cost = parseFloat(document.getElementById("service-cost").value);
+//     let tipPct = parseFloat(document.getElementById("tip-percent").value);
+//
+//     if (isNaN(cost) || isNaN(tipPct)) {
+//         document.getElementById("total-cost").innerHTML = "Please enter valid numbers.";
+//         return;
+//     }
+//
+//     let tipAmount = cost * (tipPct / 100);
+//     let total = cost + tipAmount;
+//
+//     document.getElementById("total-cost").innerHTML = "Tip: $" + tipAmount.toFixed(2) + " | Total: $" + total.toFixed(2);
+// }
+
+// Converted The above function to use some jquery
+// Selectors 1 & 2 using jQuery and .val()
+
 function calculateTip() {
-    let cost = parseFloat(document.getElementById("service-cost").value);
-    let tipPct = parseFloat(document.getElementById("tip-percent").value);
+const cost = parseFloat($("#service-cost").val());
+const tipPct = parseFloat($("#tip-percent").val());
 
-    if (isNaN(cost) || isNaN(tipPct)) {
-        document.getElementById("total-cost").innerHTML = "Please enter valid numbers.";
-        return;
-    }
+// Selector 3 using jQuery, .html(), and .css() to fulfill the CSS change requirement
+if (isNaN(cost) || isNaN(tipPct)) {
+    $("#total-cost")
+        .html("Please enter valid numbers.")
+        .css("color", "red");
+    return;
+}
 
-    let tipAmount = cost * (tipPct / 100);
-    let total = cost + tipAmount;
+const tipAmount = cost * (tipPct / 100);
+const total = cost + tipAmount;
 
-    document.getElementById("total-cost").innerHTML = "Tip: $" + tipAmount.toFixed(2) + " | Total: $" + total.toFixed(2);
+$("#total-cost")
+    .html("Tip: $" + tipAmount.toFixed(2) + " | Total: $" + total.toFixed(2))
+    .css("color", "#0056b3");
 }
 
 // Function to determine pet size category using if/else if statements
@@ -62,6 +85,7 @@ function checkSize() {
     // Create a new instance of the PetClient object using the input weight
     // (Using placeholder strings for name and type since the form only asks for weight)
     const currentPet = new PetClient("Guest Pet", "Unknown", weightInput);
+    // NOTE: I should update the form to include this information....would be much better overall
 
     // Call the prototype method to get the category and display it
     resultElement.innerHTML = "Category: " + currentPet.getSizeCategory();

@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cc0d0c2-380a-4ce3-a29e-0a3d7d05c13b" name="Changes" comment="Chapter 10: Showing users their current location via geolocation API.">
-      <change afterPath="$PROJECT_DIR$/scripts/weather.js" afterDir="false" />
+    <list default="true" id="3cc0d0c2-380a-4ce3-a29e-0a3d7d05c13b" name="Changes" comment="Chapter 11: Added getting current weather data from a weather API to the site.">
+      <change beforePath="$PROJECT_DIR$/.idea/VanBGroomingRemastered.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VanBGroomingRemastered.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security.html" beforeDir="false" afterPath="$PROJECT_DIR$/security.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1778081309671</updated>
-      <workItem from="1778081310702" duration="13916000" />
+      <workItem from="1778081310702" duration="15235000" />
     </task>
     <task id="LOCAL-00001" summary="Week 2: Math function added in the form of a tip calculator.">
       <option name="closed" value="true" />
@@ -167,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778203592967</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Chapter 11: Added getting current weather data from a weather API to the site.">
+      <option name="closed" value="true" />
+      <created>1778205750808</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1778205750808</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +197,7 @@
     <MESSAGE value="Week 8: Constructor function addition." />
     <MESSAGE value="Chapter 9: Webstorage... Saves name and email field info for future." />
     <MESSAGE value="Chapter 10: Showing users their current location via geolocation API." />
-    <option name="LAST_COMMIT_MESSAGE" value="Chapter 10: Showing users their current location via geolocation API." />
+    <MESSAGE value="Chapter 11: Added getting current weather data from a weather API to the site." />
+    <option name="LAST_COMMIT_MESSAGE" value="Chapter 11: Added getting current weather data from a weather API to the site." />
   </component>
 </project>
