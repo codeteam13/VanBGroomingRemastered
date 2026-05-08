@@ -73,20 +73,23 @@ $("#total-cost")
 //}
 
 // Function to determine pet size category using the new PetClient object
+//  Updated to allow ffull use of this constructor
 function checkSize() {
+    const nameInput = document.getElementById("pet-name").value.trim() || "Guest Pet";
+    const typeInput = document.getElementById("pet-type-select").value;
     const weightInput = parseFloat(document.getElementById("pet-weight").value);
     const resultElement = document.getElementById("size-result");
 
     if (isNaN(weightInput) || weightInput <= 0) {
         resultElement.innerHTML = "Please enter a valid weight.";
+        resultElement.style.color = "red";
         return;
     }
 
-    // Create a new instance of the PetClient object using the input weight
-    // (Using placeholder strings for name and type since the form only asks for weight)
-    const currentPet = new PetClient("Guest Pet", "Unknown", weightInput);
-    // NOTE: I should update the form to include this information....would be much better overall
+    // Create a new instance utilizing all parameters
+    const currentPet = new PetClient(nameInput, typeInput, weightInput);
 
-    // Call the prototype method to get the category and display it
-    resultElement.innerHTML = "Category: " + currentPet.getSizeCategory();
+    // Call the prototype method to output the full descriptive string
+    resultElement.innerHTML = currentPet.getClientSummary();
+    resultElement.style.color = "#0056b3"; // Reset color
 }

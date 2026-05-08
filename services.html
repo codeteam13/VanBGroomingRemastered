@@ -78,13 +78,24 @@
         <h3>Pet Size Category Checker</h3>
         <p style="margin-bottom: 10px;">Find out your pet's size category for accurate pricing!</p>
 
+        <label for="pet-name">Pet Name:</label>
+        <input type="text" id="pet-name" placeholder="e.g. Buster" style="margin-bottom: 10px; width: 100%; padding: 8px;">
+
+        <label for="pet-type-select">Pet Type:</label>
+        <select id="pet-type-select" style="margin-bottom: 10px; width: 100%; padding: 8px;">
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Other">Other</option>
+        </select>
+
         <label for="pet-weight">Pet Weight (lbs):</label>
-        <input type="number" id="pet-weight" placeholder="e.g. 45">
+        <input type="number" id="pet-weight" placeholder="e.g. 45" style="margin-bottom: 15px; width: 100%; padding: 8px;">
 
-        <button type="button" onclick="checkSize()">Check Category</button>
+        <button type="button" onclick="checkSize()" style="width: 100%;">Check Category</button>
 
-        <p id="size-result" style="margin-top: 15px; font-weight: bold;"></p>
+        <p id="size-result" style="margin-top: 15px; font-weight: bold; line-height: 1.4;"></p>
     </div>
+
     <div class="service-card" style="max-width: 400px; margin: 20px auto; display: block;">
         <h3>Size-Based Pricing Guide</h3>
         <p style="margin-bottom: 10px;">Grooming costs vary depending on the size of your pet, as larger pets require more time and product.</p>
